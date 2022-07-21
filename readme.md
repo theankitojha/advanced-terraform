@@ -1,4 +1,4 @@
-# TERRAFORM OVEREVIEW
+# TERRAFORM OVERVIEW
 ---------------------
 
 # Configuration:
