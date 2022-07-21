@@ -3,27 +3,27 @@
 
 
 data "aws_availability_zone" "available" {
-    state = "available"
+  state = "available"
 }
 
 data "aws_ami" "aws-linux" {
-    most_recent = true
-    owners = ["amazon"]
+  most_recent = true
+  owners      = ["amazon"]
 
-    filter {
-      name = "name"
-      values = ["amzn-ami-hvm*"]
-    }
+  filter {
+    name   = "name"
+    values = ["amzn-ami-hvm*"]
+  }
 
-    filter {
-      name = "root-device-type"
-      values = ["ebs"]
-    }
+  filter {
+    name   = "root-device-type"
+    values = ["ebs"]
+  }
 
-    filter {
-      name = "virtualization-type"
-      values = ["hvm"]
-    }
-  
+  filter {
+    name   = "virtualization-type"
+    values = ["hvm"]
+  }
+
 }
 
