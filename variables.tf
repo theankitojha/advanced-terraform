@@ -1,9 +1,7 @@
 # ALL VARIABLES DECLARED HERE
 #############################
 
-# Using variables we can create a palceholder for the values used by the configuration to deploy resources
-# 
-
+# Using variables we can create a palceholder for the values used by the configuration to deploy resource
 
 variable "aws_access_key" {}
 
