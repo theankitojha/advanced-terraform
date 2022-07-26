@@ -84,7 +84,7 @@ resource "aws_security_group" "sg-nodejs-instance" {
 # INSTANCE
 ##########
 
-resource "aws_instance" "ndoejs1" {
+resource "aws_instance" "nodejs1" {
   ami                    = data.aws_ami.aws-linux.id
   instance_type          = "t2.micro"
   subnet_id              = aws_subnet.subnet1.id
