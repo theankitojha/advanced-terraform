@@ -2,7 +2,7 @@
 # Two data sources defined here: one to get the list of AZs in the region, another to get the list of AMIs
 
 
-data "aws_availability_zone" "available" {
+data "aws_availability_zones" "available" {
   state = "available"
 }
 
